@@ -31,14 +31,14 @@ public class UserController {
         return userService.createUser(request);
     }
 
-        @PreAuthorize("hasAuthority('user:read')")
-        @GetMapping
-        @Operation(summary = "Get All Users")
-        public Page<UserResponse> getAllUsers(
-                Pageable pageable) {
+    @PreAuthorize("hasAuthority('user:read')")
+    @GetMapping
+    @Operation(summary = "Get All Users")
+    public Page<UserResponse> getAllUsers(
+            Pageable pageable) {
 
-            return userService.getAllUsers(pageable);
-        }
+        return userService.getAllUsers(pageable);
+    }
 
     @PreAuthorize("hasAuthority('user:read')")
     @GetMapping("/{userId}")

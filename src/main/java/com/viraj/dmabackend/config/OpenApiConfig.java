@@ -41,7 +41,7 @@ public class OpenApiConfig {
                         new Tag().name("2. User Management"),
                         new Tag().name("3. Role Management"),
                         new Tag().name("4. Permission Management"),
-                        new Tag().name("5. Health")
+                        new Tag().name("5. Client Management")
                 ));
     }
 }
